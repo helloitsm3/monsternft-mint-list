@@ -1,31 +1,28 @@
 <template>
   <section class="section">
     <div class="container">
-      <div class="row">
-        <ul
-          class="col container-filter list-unstyled categories-filter text-center mb-0"
-          id="filter"
+      <ul
+        class="container-filter list-unstyled categories-filter text-center"
+        id="filter"
+      >
+        <li
+          class="list-inline-item"
+          v-for="item in professionFilter"
+          :key="item.id"
         >
-          <li
-            class="list-inline-item"
-            v-for="item in professionFilter"
-            :key="item.id"
+          <a
+            class="categories border d-block text-dark rounded"
+            @click="updateFilter(item.name)"
+            :class="{ active: filterCategory == item.name }"
           >
-            <a
-              class="categories border d-block text-dark rounded"
-              @click="updateFilter(item.name)"
-              :class="{ active: filterCategory == item.name }"
-            >
-              {{ item.name }}
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!--end row-->
+            {{ item.name }}
+          </a>
+        </li>
+      </ul>
 
       <div class="row projects-wrapper">
         <div
-          class="col-lg-3 col-md-6 col-12 mt-4 pt-2 business"
+          class="col-xl-3 col-md-4 col-sm-6 col-12 mt-4 pt-2 business"
           v-for="(item, index) in filteredData"
           :key="index"
         >
@@ -50,21 +47,13 @@
                       </a>
                     </li>
                   </ul>
-                  <!-- <router-link
-                    class="text-muted readmore"
-                  >
-                    Read More
-                  </router-link> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--end col-->
       </div>
-      <!--end row-->
     </div>
-    <!--end container-->
   </section>
 </template>
 
