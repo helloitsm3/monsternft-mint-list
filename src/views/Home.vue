@@ -1,3 +1,4 @@
+
 <template>
   <div class="home">
     <Navbar />
@@ -16,6 +17,6 @@ export default {
     return {}
   },
   created() {},
-  methods: {}
+  methods: {},
 }
 </script>

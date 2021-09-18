@@ -3,3 +3,4 @@
     <router-view />
   </div>
 </template>
+<style src="./assets/styles/tailwind.css"></style>
