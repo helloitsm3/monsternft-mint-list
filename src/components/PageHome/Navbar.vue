@@ -1,25 +1,6 @@
 <script>
-/**
- * Navbar component
- */
 export default {
-  data() {
-    return {
-      isCondensed: false
-    }
-  },
-  props: {
-    isWhiteNavbar: {
-      type: Boolean
-    },
-    navLight: {
-      type: Boolean
-    },
-    isIcons: {
-      type: Boolean
-    }
-  },
-
+  name: 'Navbar',
   mounted: () => {
     window.onscroll = function() {
       onwindowScroll()
