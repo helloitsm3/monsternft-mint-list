@@ -2,7 +2,7 @@
 export default {
   name: 'Navbar',
   mounted: () => {
-    window.onscroll = function() {
+    window.onscroll = function () {
       onwindowScroll()
     }
 
@@ -89,8 +89,8 @@ export default {
         nextEl.classList.remove('open')
       }
       return false
-    }
-  }
+    },
+  },
 }
 </script>
 
