@@ -1,3 +1,4 @@
+
 <template>
   <div class="home">
     <Navbar />
@@ -9,6 +10,7 @@
 
 <script>
 import { Navbar, Hero, Card, BackTop } from '@/components'
+
 export default {
   name: 'Home',
   components: { Navbar, Hero, Card, BackTop },
@@ -16,6 +18,6 @@ export default {
     return {}
   },
   created() {},
-  methods: {}
+  methods: {},
 }
 </script>

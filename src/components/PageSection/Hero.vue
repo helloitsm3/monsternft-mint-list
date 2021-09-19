@@ -5,6 +5,12 @@
       <div class="container justify-content-center">
         <div class="page-next-level text-center">
           <h4 class="title">Welcome to Monster NFT 👹 Mint List</h4>
+          <button
+            v-on:click="getMonster"
+            class="bg-blue-500 px-5 py-2 rounded-md mt-3"
+          >
+            Summon Monster
+          </button>
         </div>
       </div>
     </section>
@@ -28,8 +34,14 @@
 </template>
 
 <script>
+import { summonMonster } from '@/utils/contract/summonMonster'
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  methods: {
+    getMonster: () => {
+      summonMonster()
+    },
+  },
 }
 </script>
 
