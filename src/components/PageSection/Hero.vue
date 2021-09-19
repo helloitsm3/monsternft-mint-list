@@ -5,10 +5,7 @@
       <div class="container justify-content-center">
         <div class="page-next-level text-center">
           <h4 class="title">Welcome to Monster NFT 👹 Mint List</h4>
-          <button
-            v-on:click="getMonster"
-            class="bg-blue-500 px-5 py-2 rounded-md mt-3"
-          >
+          <button @click="getMonster" class="btn btn-primary mt-3">
             Summon Monster
           </button>
         </div>
@@ -40,8 +37,8 @@ export default {
   methods: {
     getMonster: () => {
       summonMonster()
-    },
-  },
+    }
+  }
 }
 </script>
 
