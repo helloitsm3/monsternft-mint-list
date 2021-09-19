@@ -27,7 +27,15 @@
           :key="index"
         >
           <div
-            class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden"
+            class="
+              card
+              blog
+              border-0
+              work-container work-classic
+              shadow
+              rounded-md
+              overflow-hidden
+            "
             style="min-height: 380px"
           >
             <img :src="item.image" class="img-fluid work-image" alt="" />
@@ -66,7 +74,7 @@ export default {
     return {
       monsterList: [],
       professionFilter,
-      filterCategory: 'all'
+      filterCategory: 'all',
     }
   },
   async created() {
@@ -74,21 +82,21 @@ export default {
     this.monsterList = dataList
   },
   computed: {
-    filteredData: function() {
+    filteredData: function () {
       if (this.filterCategory === 'all') {
         return this.monsterList
       } else {
         return this.monsterList.filter(
-          x => professionData(x.suffix) === this.filterCategory
+          (x) => professionData(x.suffix) === this.filterCategory
         )
       }
-    }
+    },
   },
   methods: {
     professionData,
     updateFilter(filterName) {
       this.filterCategory = filterName
-    }
-  }
+    },
+  },
 }
 </script>

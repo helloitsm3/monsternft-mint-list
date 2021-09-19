@@ -10,6 +10,7 @@
   "dependencies": {
     "bootstrap": "^5.1.1",
     "core-js": "^3.6.5",
+    "ethers": "^5.4.7",
     "js-base64": "^3.7.1",
     "vue": "^2.6.11",
     "vue-feather-icons": "^5.1.0",

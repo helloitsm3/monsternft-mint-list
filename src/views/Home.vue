@@ -10,6 +10,7 @@
 
 <script>
 import { Navbar, Hero, Card, BackTop } from '@/components'
+
 export default {
   name: 'Home',
   components: { Navbar, Hero, Card, BackTop },
